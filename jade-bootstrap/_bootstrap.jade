@@ -52,12 +52,13 @@ html(lang="en")
 		meta(name="description",content="")
 		meta(name="author",content="")
 		link(rel="icon",href="../../favicon.ico")
-		script(src="jade-bootstrap/js/ga.js")
 		block title
 			title
 		block styles
 			link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
 			//link(rel="stylesheet",href="css/bootstrap.min.css")
+		script
+			include js/ga.js
 	body(data-spy="scroll",data-target=".scrollspy")
 		block body
 			
