@@ -1,0 +1,81 @@
+extends ./jade-superhero/_layout
+block title
+    title Photoshop 基本教學 懶人包 
+block body
+    //navbar
+    include ./jade-superhero/_navbar
+    .container.content
+        .blog-header
+            h1.blog-title Photoshop 基本教學
+            p. 常用的基本技巧和快捷鍵
+
+        .row
+            .col-sm-12.blog-main
+                .blog-post
+                    h2.blog-post-title 必了解的三件事情
+                    h3
+                        | 1.原檔案另外備份，photoshop有復原次數限制，避免後製出錯請記得備份原檔案。
+                    h3
+                        | 2.Crtl + z只能復原一次，Crtl +Alt + Z可以復原20次。
+                    h3
+                        | 3.選取工具和切割工具不要搞混(身受其害)
+        .row
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                img.img-responsive(src='./images/quick_photoshop/ps_click.jpg', alt='example img')
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                h2 一般介面操作
+                h3 右邊為常用工具列，每個工具久按會出現變種的工具。(例如：快速選取工具，魔術棒工具)
+                h3 Alt + 滑輪：放大圖片
+                h3 Ctrl + 滑輪：左右移動畫面，當圖片超出可見範圍時使用。
+            hr
+        .row
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                img.img-responsive(src='./images/quick_photoshop/ps_unlock.jpg', alt='example img')
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                h2 解開圖層、移動圖案、置入
+                img.img-responsive(src='./images/quick_photoshop/ps_unlock1.jpg', alt='example img')
+                h3 圖層解開後才能對圖案做移動
+                img.img-responsive(src='./images/quick_photoshop/ps_move.jpg', alt='example img')
+                hr
+                hr
+                img.img-responsive(src='./images/quick_photoshop/ps_setin1.jpg', alt='example img')
+                h3 置入：能將其他圖片檔案用圖層的方式放進工作區域，並產生一個新圖層。
+                img.img-responsive(src='./images/quick_photoshop/ps_setin2.jpg', alt='example img')
+                h3 下圖可以看到小松鼠已經被置入進去右下角。
+                img.img-responsive(src='./images/quick_photoshop/ps_setin3.jpg', alt='example img')
+            hr
+        .row
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                h2 選取工具(樣式、調整邊緣)
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                img.img-responsive(src='./images/quick_photoshop/ps_select1.jpg', alt='example img')
+                h2 Crtl + D 可以取消選取， Ctrl +J 可以將選取的部分另開圖層
+            hr
+        .row
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                img.img-responsive(src='./images/quick_photoshop/ps_select3.jpg', alt='example img')
+                h2 樣式：可選擇正常、固定比例、固定尺吋三種模式
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                img.img-responsive(src='./images/quick_photoshop/ps_select2.jpg', alt='example img')
+                h2 我們這邊採用16:9的固定比例還後製圖片，並調整邊緣至羽化107像素。
+                img.img-responsive(src='./images/quick_photoshop/ps_select4.jpg', alt='example img')
+                h2 常用的羽化功能就在這邊，之後你可以選擇輸出方式。
+            hr
+        .row
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                img.img-responsive(src='./images/quick_photoshop/ps_cut1.jpg', alt='example img')
+                h2 裁切工具
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                img.img-responsive(src='./images/quick_photoshop/ps_cut2.jpg', alt='example img')
+                h2 選擇範圍後按下Enter，即可預覽切割結果，並按下右上打勾就能輸出圖案了。
+                img.img-responsive(src='./images/quick_photoshop/ps_cut3.jpg', alt='example img')
+                h2 這個功能可以用在很多相片切割後製的用途上，網站切版也是使用這個工具，所以需要熟練。
+                h2 如果不小心切割錯了，Crtl+Alt+Z可以回復切割前狀態。
+                hr
+
+        // /END THE FEATURETTES
+        // FOOTER
+        include ./jade-superhero/_footer
+
+
+
