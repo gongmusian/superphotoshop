@@ -1,0 +1,22 @@
+extends ./jade-superhero/_layout
+block title
+    title Photoshop Super Photoshop 還在建置中
+block body
+    //navbar
+    include ./jade-superhero/_navbar
+    .container.content
+        .blog-header
+            h1.blog-title SuperPhotoshop 畫面建置中
+            p. 很不好意思，請回首頁
+        .row
+            .col-sm-12.col-xs-12.col-md-12.col-lg-12
+                img.img-responsive(style='position: center;' src='./images/404.jpg', alt='example img')
+                a(href="./index.html") 
+                    h1 Back to Home 
+                    hr
+        // /END THE FEATURETTES
+        // FOOTER
+        include ./jade-superhero/_footer
+
+
+
